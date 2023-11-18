@@ -1,7 +1,7 @@
 body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
-  background-image: url("./the-cleveland-museum-of-art-rIvUkaEH_gM-unsplash.jpg");
+  background-color:black
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -10,8 +10,7 @@ body {
 a {
   text-decoration: none;
 }
-header h1,
-h2 {
+header h1{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +21,22 @@ h2 {
   max-height: 90px;
   font-size: 2.25rem;
   font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgb(194, 133, 89);
+}
+header h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: aliceblue;
+  min-height: 75px;
+  max-height: 90px;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgb(194, 133, 89);
 }
 
 header ul {
@@ -38,17 +53,25 @@ header a {
   color: aliceblue;
   font-size: 1rem;
 }
+/* About Me */
+.about-me {
+  background-color: black;
+  color: white;
+  min-height: 500px;
+  display: flex;
+}
+
 /* Icon Section */
-section {
+.icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-image: url(../images/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
+  background-size:contain;
 }
 div {
   border: 3px solid white;
   background: none;
-  min-width: 40rem;
-  min-height: 40rem;
   margin: 0.5rem;
   background-color: rgba(0, 0, 0, 0.712);
   color: azure;
@@ -63,6 +86,18 @@ div h3 {
   order: 1;
   font-weight: bold;
 }
+div img {
+  object-fit: fill;
+}
+
+div .Project1{
+  flex: 2 0 25rem;
+  min-width: 50rem;
+}
+div .general{
+  min-width: 25rem;
+  min-height: 25rem;
+}
 
 .general {
   max-width: 40rem;
@@ -72,7 +107,9 @@ div h3 {
 /* Articles */
 article {
   min-height: 10rem;
-  color: black;
+  color: white;
+  background-color: black;
+  font-size: 1.25rem;
 }
 /* fOOTER SECTION */
 footer {
@@ -86,6 +123,10 @@ footer ul {
   justify-content: space-around;
   align-content: center;
   background-color: black;
+  text-decoration: overline;
+  text-decoration-color: rgb(194, 133, 89);
+  font-size: 3rem;
+  
 }
 
 footer a {
