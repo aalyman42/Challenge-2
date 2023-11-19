@@ -3,7 +3,6 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: black;
   background-size: auto;
-  width: auto;
 }
 
 /* Header Section */
@@ -71,6 +70,7 @@ header a {
 .info-block img {
   max-height: 400px;
   max-width: 400px;
+  flex: 1 5 200px;
 }
 
 .info-block h2 {
@@ -169,4 +169,42 @@ footer h4 {
   color: azure;
   font-size: 1.5rem;
   text-align: center;
+}
+
+/* viewport adjustments */
+/* For Ipad/Tablet view */
+@media screen and (max-width: 1025px) {
+  img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .info-block img {
+    max-width: 200px;
+    max-height: 200px;
+    order: -1;
+  }
+  .info-block p {
+    max-width: 100%;
+  }
+  .border {
+    display: none;
+  }
+
+  footer {
+    font-size: 2rem;
+  }
+}
+
+/* For mobile */
+@media screen and (max-width: 576px) {
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .icons h3 {
+    font-size: 1.5rem;
+  }
+  footer {
+    font-size: 1.5rem;
+  }
 }
