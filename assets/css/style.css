@@ -1,3 +1,4 @@
+/* Global applications */
 body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
@@ -5,10 +6,11 @@ body {
   background-size: auto;
 }
 
-/* Header Section */
 a {
   text-decoration: none;
 }
+
+/* Header Section */
 header h1 {
   display: flex;
   flex-direction: column;
@@ -23,6 +25,7 @@ header h1 {
   text-decoration: underline;
   text-decoration-color: rgb(194, 133, 89);
 }
+
 header h2 {
   display: flex;
   flex-direction: column;
@@ -51,6 +54,7 @@ header li {
   padding-left: 1%;
   padding-right: 1%;
 }
+
 header a {
   color: aliceblue;
   font-size: 1rem;
@@ -58,7 +62,7 @@ header a {
 
 /* About Me & Article Blocks*/
 .info-block {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(15, 15, 15);
   color: white;
   height: 450px;
   display: flex;
@@ -80,6 +84,7 @@ header a {
   margin-top: 3.8%;
   margin-bottom: 1%;
 }
+
 .info-block h3 {
   font-size: 1.9rem;
   text-decoration: underline;
@@ -87,6 +92,7 @@ header a {
   margin-top: 3.8%;
   margin-bottom: 1%;
 }
+
 .info-block p {
   font-size: 1rem;
   max-width: 50%;
@@ -98,6 +104,7 @@ header a {
   border-top: solid thin rgb(194, 133, 89);
   max-height: 1px;
 }
+
 /* Icon Section */
 .icons {
   display: flex;
@@ -106,6 +113,7 @@ header a {
   background-image: url(../images/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
   background-size: contain;
 }
+
 div {
   border: 3px solid white;
   background: none;
@@ -117,6 +125,7 @@ div {
   justify-content: flex-end;
   align-items: flex-end;
   font-size: 2.5rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.582);
 }
 
 div h3 {
@@ -125,6 +134,7 @@ div h3 {
   text-decoration: none;
   color: aliceblue;
 }
+
 div img {
   object-fit: fill;
 }
@@ -133,9 +143,27 @@ div .Project1 {
   flex: 2 0 25rem;
   min-width: 50rem;
 }
+
 div .general {
   min-width: 25rem;
   min-height: 25rem;
+}
+
+div p {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.445);
+  position: absolute;
+  color: aliceblue;
+  font-size: 3rem;
+  width: 400px;
+  height: 400px;
+}
+
+div:hover p {
+  display: block;
+}
+div:hover {
+  border: 3px solid lightslategray;
 }
 
 .general {
@@ -188,7 +216,11 @@ footer h4 {
   .border {
     display: none;
   }
-
+  div p {
+    width: 200px;
+    height: 200px;
+    font-size: 1.5rem;
+  }
   footer {
     font-size: 2rem;
   }
@@ -199,6 +231,11 @@ footer h4 {
   img {
     max-width: 100px;
     max-height: 100px;
+  }
+  div p {
+    width: 100px;
+    height: 100px;
+    font-size: 1rem;
   }
   .icons h3 {
     font-size: 1.5rem;
