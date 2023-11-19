@@ -99,12 +99,6 @@ header a {
   margin-left: 1%;
 }
 
-.border {
-  width: 40%;
-  border-top: solid thin rgb(194, 133, 89);
-  max-height: 1px;
-}
-
 /* Icon Section */
 .icons {
   display: flex;
@@ -162,6 +156,7 @@ div p {
 div:hover p {
   display: block;
 }
+
 div:hover {
   border: 3px solid lightslategray;
 }
@@ -169,6 +164,10 @@ div:hover {
 .general {
   max-width: 40rem;
   max-height: 40rem;
+}
+
+#project1 {
+  min-width: 60rem;
 }
 
 /* fOOTER SECTION */
