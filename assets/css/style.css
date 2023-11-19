@@ -90,6 +90,13 @@ header a {
 .info-block p {
   font-size: 1rem;
   max-width: 50%;
+  margin-left: 1%;
+}
+
+.border {
+  width: 40%;
+  border-top: solid thin rgb(194, 133, 89);
+  max-height: 1px;
 }
 /* Icon Section */
 .icons {
@@ -115,6 +122,8 @@ div {
 div h3 {
   order: 1;
   font-weight: bold;
+  text-decoration: none;
+  color: aliceblue;
 }
 div img {
   object-fit: fill;
@@ -134,16 +143,6 @@ div .general {
   max-height: 40rem;
 }
 
-/* Articles */
-#left-text {
-  padding-left: 2%;
-}
-
-.border {
-  width: 40%;
-  border-top: solid thin rgb(194, 133, 89);
-  max-height: 1px;
-}
 /* fOOTER SECTION */
 footer {
   background-color: black;
