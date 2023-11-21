@@ -10,4 +10,4 @@ A portfolio for web developer Aaron Lyman with an About Me, Contact Links, and p
 
 ## Link
 
-aalyman42.github.io/Lyman-Portfolio/
+https://aalyman42.github.io/Lyman-Portfolio/
