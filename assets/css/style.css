@@ -1,54 +1,47 @@
+:root {
+  --dark: #000;
+  --articleColor: rgb(15, 15, 15);
+  --light: aliceblue;
+  --Accent: rgb(194, 133, 89);
+}
+
 /* Global applications */
 body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   background-image: url(../images/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
   background-size: contain;
+  color: var(--light);
 }
 
 a {
   text-decoration: none;
+  color: var(--light);
+}
+
+h1,
+h2 {
+  text-decoration: underline;
+  text-decoration-color: var(--Accent);
 }
 
 /* Header Section */
-header h1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: aliceblue;
-  min-height: 75px;
-  max-height: 90px;
-  font-size: 2.25rem;
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: rgb(194, 133, 89);
-}
-
+header h1,
 header h2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: aliceblue;
+  text-align: center;
+  background-color: var(--dark);
   min-height: 75px;
   max-height: 90px;
   font-size: 2.25rem;
   font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: rgb(194, 133, 89);
 }
 
 /* navbar */
 header ul {
   display: flex;
   justify-content: flex-end;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--dark);
   padding-bottom: 1%;
-  text-decoration: underline;
-  text-decoration-color: rgb(194, 133, 89);
 }
 
 header li {
@@ -57,14 +50,16 @@ header li {
 }
 
 header a {
-  color: aliceblue;
+  color: var;
   font-size: 1rem;
+  text-decoration: underline;
+  text-decoration-color: var(--Accent);
 }
 
 /*Article Blocks*/
 .info-block {
-  background-color: rgb(15, 15, 15);
-  color: white;
+  background-color: var(--articleColor);
+  color: var(--light);
   height: 450px;
   display: flex;
   flex-direction: column;
@@ -75,21 +70,13 @@ header a {
 .info-block img {
   max-height: 400px;
   max-width: 400px;
-  flex: 1 5 200px;
 }
 
-.info-block h2 {
-  font-size: 1.9rem;
-  text-decoration: underline;
-  text-decoration-color: rgb(194, 133, 89);
-  margin-top: 3.8%;
-  margin-bottom: 1%;
-}
-
+.info-block h2,
 .info-block h3 {
   font-size: 1.9rem;
   text-decoration: underline;
-  text-decoration-color: rgb(194, 133, 89);
+  text-decoration-color: var(--Accent);
   margin-top: 3.8%;
   margin-bottom: 1%;
 }
@@ -147,7 +134,7 @@ div p {
   display: none;
   background-color: rgba(0, 0, 0, 0.445);
   position: absolute;
-  color: aliceblue;
+  color: var(--light);
   font-size: 3rem;
   width: 400px;
   height: 400px;
