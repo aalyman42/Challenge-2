@@ -9,8 +9,7 @@
 body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
-  background-image: url(../images/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
-  background-size: contain;
+  background-color: var(--articleColor);
   color: var(--light);
 }
 
@@ -34,6 +33,9 @@ header h2 {
   max-height: 90px;
   font-size: 2.25rem;
   font-weight: bold;
+}
+header h1 {
+  padding-top: 1%;
 }
 
 /* navbar */
@@ -72,7 +74,6 @@ header a {
   max-width: 400px;
 }
 
-.info-block h2,
 .info-block h3 {
   font-size: 1.9rem;
   text-decoration: underline;
@@ -88,6 +89,10 @@ header a {
   margin-bottom: 2%;
 }
 
+#Aaronpic {
+  margin-left: 2%;
+  border-radius: 20px;
+}
 /* Icon Board*/
 .icons {
   display: flex;
@@ -95,20 +100,20 @@ header a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  max-height: 85rem;
-  max-width: 40rem;
+  gap: 10px;
+  max-height: 915px;
+  max-width: 100%;
+  background-image: url(../images/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 div {
   border: 3px solid white;
   background: none;
-  margin: 0.5rem;
   background-color: rgba(0, 0, 0, 0.712);
-  color: azure;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  color: var(--light);
   font-size: 2.5rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.582);
 }
@@ -125,10 +130,13 @@ div img {
 }
 
 div .general {
-  min-width: 25rem;
-  min-height: 25rem;
+  min-width: 25%;
+  min-height: 25%;
 }
 
+#Project {
+  height: 100%;
+}
 /* icon hovering effect */
 div p {
   display: none;
@@ -180,43 +188,45 @@ footer a {
 }
 
 /* footer signature */
-footer h4 {
-  color: azure;
+h4 {
+  color: var(--light);
   font-size: 1.5rem;
   text-align: center;
 }
 
 /* viewport adjustments */
 /* For Ipad/Tablet view */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .icons {
     max-height: 46rem;
   }
-  .general img {
+  .general img,
+  .info-block img {
     max-width: 200px;
     max-height: 200px;
   }
   #Project1 img {
-    height: 430px;
+    height: 460px;
     width: 200px;
   }
   .info-block img {
-    max-width: 200px;
-    max-height: 200px;
     order: -1;
   }
   .info-block p {
     max-width: 100%;
   }
-  .general p {
+
+  section {
+    max-height: 500px;
+    gap: 5px;
+  }
+  div p {
     width: 200px;
     height: 200px;
     font-size: 1.5rem;
   }
   #Project1 p {
-    width: 200px;
     height: 430px;
-    font-size: 1.5rem;
   }
   footer {
     font-size: 2rem;
@@ -233,22 +243,18 @@ footer h4 {
     max-height: 100px;
   }
   #Project1 img {
-    height: 215px;
+    height: 246px;
     width: 100px;
   }
-  .general p {
+  div p {
     width: 100px;
     height: 100px;
     font-size: 1rem;
   }
   #Project1 p {
-    width: 100px;
     height: 215px;
-    font-size: 1rem;
   }
-  .icons h3 {
-    font-size: 1.5rem;
-  }
+  .icons h3,
   footer {
     font-size: 1.5rem;
   }
